@@ -1,0 +1,4 @@
+## Personal Projects
+
+### LearnToGame (2D Character Animation)
+The starting point of a 2D side-scrolling game, built from scratch in Java with Swing/AWT and no game engine. Runs its own game loop on a dedicated thread targeting 120 FPS, with a window, panel, and keyboard/mouse input wired into a simple entity system. The focus of this project was character animation: the player sprite sheet is sliced into a 2D array of 32×32 frames (one row per action), and a frame-timing system advances through them at a fixed animation speed. A small state machine drives the transitions between IDLE, RUN, JUMP, FALL, ATTACK, and DEATH, with per-action frame counts, horizontal sprite flipping for facing direction, and "locked" one-shot animations (jump/fall/attack/death) that play to completion before returning to idle. Also includes parallax background layers and forest/house tilesets loaded through a central asset loader, laying groundwork for future levels.
